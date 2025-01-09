@@ -6,8 +6,15 @@ yarn-debug.log*
 yarn-error.log*
 
 # Dependency directories
-node_modules/  # This ensures node_modules is ignored
-jspm_packages/
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+.env.*   # Ignores environment-specific files like .env.development, .env.production
 
 # Runtime data
 pids
@@ -15,22 +22,14 @@ pids
 *.seed
 *.pid.lock
 
-# Directory for environment variables
-.env
-
-# Build output
-dist/
-build/
-
 # Cache directories
 .cache/
 .tmp/
 
 # IDE and editor settings
 .idea/
-*.swp
-*.swo
-*.swn
+.vscode/
+*.code-workspace
 
 # Operating system files
 .DS_Store
